@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://docs-aibuds.github.io/zh-Hans/blog</id>
+    <title>AIBuds SDK iOS Blog</title>
+    <updated>2026-08-06T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://docs-aibuds.github.io/zh-Hans/blog"/>
+    <subtitle>AIBuds SDK iOS Blog</subtitle>
+    <icon>https://docs-aibuds.github.io/zh-Hans/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[欢迎来到 AIBuds 文档站]]></title>
+        <id>https://docs-aibuds.github.io/zh-Hans/blog/welcome</id>
+        <link href="https://docs-aibuds.github.io/zh-Hans/blog/welcome"/>
+        <updated>2026-08-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[大家好 👋 —— 欢迎来到 AIBuds SDK 官方文档站！]]></summary>
+        <content type="html"><![CDATA[<p>大家好 👋 —— 欢迎来到 AIBuds SDK 官方文档站！</p>
+<p>如果你曾经尝试开发一款 iOS 应用，去和智能眼镜、耳机或其他 AI 可穿戴设备通过蓝牙通信，你一定知道背后有多少繁琐的工作：BLE 扫描、设备配对、音频路由、AI 服务商鉴权、离线语音指令、崩溃上报……清单可以一直列下去。这正是我们打造 AIBuds SDK 的初衷 —— 把所有这些复杂度封装成简洁、模块化的 API，让你在几分钟内就能集成到自己的 App 中。</p>
+<!-- -->
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="为什么我们要做这个站点">为什么我们要做这个站点<a href="https://docs-aibuds.github.io/zh-Hans/blog/welcome#%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E8%A6%81%E5%81%9A%E8%BF%99%E4%B8%AA%E7%AB%99%E7%82%B9" class="hash-link" aria-label="为什么我们要做这个站点的直接链接" title="为什么我们要做这个站点的直接链接" translate="no">​</a></h2>
+<p>优秀的 SDK 配得上优秀的文档。很多时候，集成一款硬件 SDK 意味着要在分散的头文件、过时的示例代码和半年没更新的 README 之间反复跳转。我们希望 AIBuds 不一样。</p>
+<p>这个站点就是我们的一份承诺。每一个 subspec、每一项权限、每一个你在集成过程中可能踩到的坑，都在这里有据可查 —— 中英双语，并提供可运行的 Swift 与 Objective-C 示例并排对照。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="站点内容概览">站点内容概览<a href="https://docs-aibuds.github.io/zh-Hans/blog/welcome#%E7%AB%99%E7%82%B9%E5%86%85%E5%AE%B9%E6%A6%82%E8%A7%88" class="hash-link" aria-label="站点内容概览的直接链接" title="站点内容概览的直接链接" translate="no">​</a></h2>
+<p>如果你是第一次来，下面是怎么用好这份文档的建议：</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-快速开始">🚀 快速开始<a href="https://docs-aibuds.github.io/zh-Hans/blog/welcome#-%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B" class="hash-link" aria-label="🚀 快速开始的直接链接" title="🚀 快速开始的直接链接" translate="no">​</a></h3>
+<p>从 <strong><a class="" href="https://docs-aibuds.github.io/zh-Hans/docs/getting-started/installation">安装指南</a></strong> 开始 —— 我们覆盖了完整安装与自定义安装两种方式，逐一讲解每个 CocoaPods subspec，并列出你在使用本地 Wi-Fi 访问、Bonjour 发现等功能时所需的 Info.plist 权限和 entitlements。然后接着看 <strong><a class="" href="https://docs-aibuds.github.io/zh-Hans/docs/getting-started/quickstart">快速入门</a></strong> —— 这是一段从 SDK 初始化 → 扫描 → 添加设备 → 连接 → 下发指令的完整上手之旅。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-核心功能">🔩 核心功能<a href="https://docs-aibuds.github.io/zh-Hans/blog/welcome#-%E6%A0%B8%E5%BF%83%E5%8A%9F%E8%83%BD" class="hash-link" aria-label="🔩 核心功能的直接链接" title="🔩 核心功能的直接链接" translate="no">​</a></h3>
+<p>所有与蓝牙和设备管理相关的内容都在这里。你会了解到配对流程、连接状态管理、ANC 控制、通过设备热点进行文件传输，以及如何接入 RTSP 直播流管线。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-ai-能力">🤖 AI 能力<a href="https://docs-aibuds.github.io/zh-Hans/blog/welcome#-ai-%E8%83%BD%E5%8A%9B" class="hash-link" aria-label="🤖 AI 能力的直接链接" title="🤖 AI 能力的直接链接" translate="no">​</a></h3>
+<p>这里是最有意思的部分。聊天、同声传译、流式 ASR、TTS、对话总结 —— 我们目前支持两家 AI 服务商（星芒 StarBurst 和美乐创 MltCloud），模块化的插件体系意味着接入第三家也只是一个 subspec 的事。</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-语音助手与日志">🎙️ 语音助手与日志<a href="https://docs-aibuds.github.io/zh-Hans/blog/welcome#%EF%B8%8F-%E8%AF%AD%E9%9F%B3%E5%8A%A9%E6%89%8B%E4%B8%8E%E6%97%A5%E5%BF%97" class="hash-link" aria-label="🎙️ 语音助手与日志的直接链接" title="🎙️ 语音助手与日志的直接链接" translate="no">​</a></h3>
+<p>离线语音指令鉴权、XLFacility 日志后端、崩溃日志收集 —— 你把功能推向生产环境所需的稳定与可观测性，都在这里。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="关于模块化设计">关于模块化设计<a href="https://docs-aibuds.github.io/zh-Hans/blog/welcome#%E5%85%B3%E4%BA%8E%E6%A8%A1%E5%9D%97%E5%8C%96%E8%AE%BE%E8%AE%A1" class="hash-link" aria-label="关于模块化设计的直接链接" title="关于模块化设计的直接链接" translate="no">​</a></h2>
+<p>我们尤其引以为豪的一点是：AIBuds SDK 从不强制你接受一个"大而全"的打包方案。每一项功能都是一个 CocoaPods subspec。只想做一个轻量级的设备配对 App？加一行 <code>AIBudsSDK/ABMate</code> 就够了。想要 AI 全家桶？用 <code>AIBudsSDK/AllInOne</code>。或者介于两者之间的任何组合都可以。</p>
+<p><code>Core</code> subspec 会作为依赖被自动引入，为其他模块提供稳定的基础能力。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="加入社区">加入社区<a href="https://docs-aibuds.github.io/zh-Hans/blog/welcome#%E5%8A%A0%E5%85%A5%E7%A4%BE%E5%8C%BA" class="hash-link" aria-label="加入社区的直接链接" title="加入社区的直接链接" translate="no">​</a></h2>
+<p>这份文档完全开源，我们欢迎任何形式的贡献。发现错别字？示例过时了？希望我们补上某个功能？欢迎到 <a href="https://github.com/topstepsmart/AIBuds-SDK-iOS" target="_blank" rel="noopener noreferrer" class="">topstepsmart/AIBuds-SDK-iOS</a> 提 issue 或 PR —— 我们会逐一审阅。</p>
+<p>如果你用 AIBuds 做出了有意思的产品，请告诉我们！每次看到有新 App 基于 SDK 上线，我们都会由衷地激动。</p>
+<p>感谢阅读，祝编码愉快。<br>
+<!-- -->—— AIBuds 团队</p>]]></content>
+        <author>
+            <name>Mr.P</name>
+            <uri>https://pcjbird.github.io/</uri>
+        </author>
+        <category label="AIBuds" term="AIBuds"/>
+        <category label="Wearables" term="Wearables"/>
+        <category label="iOS" term="iOS"/>
+        <category label="AI" term="AI"/>
+        <category label="SDK" term="SDK"/>
+        <category label="Swift" term="Swift"/>
+        <category label="Objective-C" term="Objective-C"/>
+        <category label="Bluetooth" term="Bluetooth"/>
+    </entry>
+</feed>

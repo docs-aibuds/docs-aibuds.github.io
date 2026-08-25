@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://docs-aibuds.github.io/ru/blog</id>
+    <title>AIBuds SDK iOS Blog</title>
+    <updated>2026-08-06T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://docs-aibuds.github.io/ru/blog"/>
+    <subtitle>AIBuds SDK iOS Blog</subtitle>
+    <icon>https://docs-aibuds.github.io/ru/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome to AIBuds Docs]]></title>
+        <id>https://docs-aibuds.github.io/ru/blog/welcome</id>
+        <link href="https://docs-aibuds.github.io/ru/blog/welcome"/>
+        <updated>2026-08-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hi everyone 👋 — welcome to the official AIBuds SDK documentation site!]]></summary>
+        <content type="html"><![CDATA[<p>Hi everyone 👋 — welcome to the official AIBuds SDK documentation site!</p>
+<p>If you've ever tried to build an iOS app that talks to smart glasses, earbuds, or any AI wearable over Bluetooth, you know how much plumbing is involved: BLE scanning, device pairing, audio routing, AI provider auth, offline voice commands, crash reporting… the list goes on. That's why we built AIBuds SDK — to wrap all that complexity into clean, modular APIs you can drop into your app in minutes.</p>
+<!-- -->
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="why-we-built-this-site">Why We Built This Site<a href="https://docs-aibuds.github.io/ru/blog/welcome#why-we-built-this-site" class="hash-link" aria-label="Прямая ссылка на Why We Built This Site" title="Прямая ссылка на Why We Built This Site" translate="no">​</a></h2>
+<p>Good SDKs deserve good docs. Too often, getting started with a hardware SDK means flipping between scattered header files, outdated sample code, and a README that hasn't been touched in six months. We wanted AIBuds to be different.</p>
+<p>This site is our commitment to that. Every subspec, every permission, every edge case you might hit when integrating is documented here — in both English and Chinese — with working Swift and Objective-C samples side by side.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-inside">What's Inside<a href="https://docs-aibuds.github.io/ru/blog/welcome#whats-inside" class="hash-link" aria-label="Прямая ссылка на What's Inside" title="Прямая ссылка на What's Inside" translate="no">​</a></h2>
+<p>If you're new, here's how to get the most out of these docs:</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-getting-started">🚀 Getting Started<a href="https://docs-aibuds.github.io/ru/blog/welcome#-getting-started" class="hash-link" aria-label="Прямая ссылка на 🚀 Getting Started" title="Прямая ссылка на 🚀 Getting Started" translate="no">​</a></h3>
+<p>Start with <strong><a class="" href="https://docs-aibuds.github.io/ru/docs/getting-started/installation">Installation</a></strong> — we cover Full vs Custom installations, walk you through every CocoaPods subspec, and list the Info.plist permissions and entitlements you need for features like local Wi-Fi access and Bonjour discovery. Then move on to <strong><a class="" href="https://docs-aibuds.github.io/ru/docs/getting-started/quickstart">Quick Start</a></strong> — a step-by-step tour from SDK init → scan → add device → connect → send commands.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-core-features">🔩 Core Features<a href="https://docs-aibuds.github.io/ru/blog/welcome#-core-features" class="hash-link" aria-label="Прямая ссылка на 🔩 Core Features" title="Прямая ссылка на 🔩 Core Features" translate="no">​</a></h3>
+<p>Everything Bluetooth and device management lives here. Learn about pairing flows, connection state handling, ANC controls, file transfers over the device hotspot, and how to integrate the live RTSP streaming pipeline.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="-ai-capabilities">🤖 AI Capabilities<a href="https://docs-aibuds.github.io/ru/blog/welcome#-ai-capabilities" class="hash-link" aria-label="Прямая ссылка на 🤖 AI Capabilities" title="Прямая ссылка на 🤖 AI Capabilities" translate="no">​</a></h3>
+<p>This is where things get fun. Chat, simultaneous interpretation, streaming ASR, TTS, conversation summarization — we support two AI providers today (StarBurst and MltCloud) and the modular plugin system means adding a third is just a subspec away.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-voice-assistant--logging">🎙️ Voice Assistant &amp; Logging<a href="https://docs-aibuds.github.io/ru/blog/welcome#%EF%B8%8F-voice-assistant--logging" class="hash-link" aria-label="Прямая ссылка на 🎙️ Voice Assistant &amp; Logging" title="Прямая ссылка на 🎙️ Voice Assistant &amp; Logging" translate="no">​</a></h3>
+<p>Offline voice command authentication, XLFacility log sinks, crash report collection — everything you need to ship production-ready features with confidence.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="a-note-on-the-modular-design">A Note on the Modular Design<a href="https://docs-aibuds.github.io/ru/blog/welcome#a-note-on-the-modular-design" class="hash-link" aria-label="Прямая ссылка на A Note on the Modular Design" title="Прямая ссылка на A Note on the Modular Design" translate="no">​</a></h2>
+<p>One thing we're especially proud of: AIBuds SDK doesn't force a one-size-fits-all bundle on you. Every feature is a CocoaPods subspec. Building a lean companion app that only needs device connectivity? Just add <code>AIBudsSDK/ABMate</code> and you're done. Want all the AI bells and whistles? Use <code>AIBudsSDK/AllInOne</code>. Or anything in between.</p>
+<p>The <code>Core</code> subspec is always pulled in automatically as a dependency, so the other modules have a stable foundation to build on.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="join-the-community">Join the Community<a href="https://docs-aibuds.github.io/ru/blog/welcome#join-the-community" class="hash-link" aria-label="Прямая ссылка на Join the Community" title="Прямая ссылка на Join the Community" translate="no">​</a></h2>
+<p>These docs are open source, and we welcome contributions. Found a typo? A sample that's out of date? A feature you wish we covered? Open an issue or a pull request over at <a href="https://github.com/topstepsmart/AIBuds-SDK-iOS" target="_blank" rel="noopener noreferrer" class="">topstepsmart/AIBuds-SDK-iOS</a> — we review everything.</p>
+<p>If you build something with AIBuds, let us know! It's genuinely exciting every time we see a new app ship using the SDK.</p>
+<p>Thanks for reading, and happy coding.<br>
+<!-- -->— the AIBuds team</p>]]></content>
+        <author>
+            <name>Mr.P</name>
+            <uri>https://pcjbird.github.io/</uri>
+        </author>
+        <category label="AIBuds" term="AIBuds"/>
+        <category label="Wearables" term="Wearables"/>
+        <category label="iOS" term="iOS"/>
+        <category label="AI" term="AI"/>
+        <category label="SDK" term="SDK"/>
+        <category label="Swift" term="Swift"/>
+        <category label="Objective-C" term="Objective-C"/>
+        <category label="Bluetooth" term="Bluetooth"/>
+    </entry>
+</feed>

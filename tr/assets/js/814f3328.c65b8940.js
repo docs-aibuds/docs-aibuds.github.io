@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_=self.webpackChunk_||[]).push([["1833"],{55513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome to AIBuds Docs","permalink":"/tr/blog/welcome","unlisted":false,"date":"2026-08-06T00:00:00.000Z"}]}')}}]);

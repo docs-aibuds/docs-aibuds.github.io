@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200">
+  <defs>
+    <linearGradient id="wear-frame" x1="35" y1="54" x2="204" y2="121" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EDE9FE"/>
+      <stop offset=".48" stop-color="#8B85A5"/>
+      <stop offset="1" stop-color="#C4B5FD"/>
+    </linearGradient>
+    <linearGradient id="wear-lens" x1="53" y1="68" x2="183" y2="119" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16345A"/>
+      <stop offset=".52" stop-color="#181538"/>
+      <stop offset="1" stop-color="#352563"/>
+    </linearGradient>
+    <linearGradient id="wear-signal" x1="70" y1="91" x2="170" y2="91" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset=".5" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#E9D5FF"/>
+    </linearGradient>
+    <filter id="wear-shadow" x="18" y="35" width="205" height="118" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="12" stdDeviation="9" flood-color="#060417" flood-opacity=".45"/>
+    </filter>
+    <filter id="wear-glow" x="52" y="72" width="136" height="44" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+  <ellipse cx="119" cy="145" rx="78" ry="8" fill="#7C3AED" opacity=".13"/>
+  <g filter="url(#wear-shadow)">
+    <path d="M28 69 12 65M212 69l16-4" fill="none" stroke="url(#wear-frame)" stroke-linecap="round" stroke-width="8"/>
+    <rect x="35" y="55" width="82" height="68" rx="25" fill="url(#wear-frame)"/>
+    <rect x="123" y="55" width="82" height="68" rx="25" fill="url(#wear-frame)"/>
+    <rect x="42" y="62" width="68" height="54" rx="20" fill="url(#wear-lens)"/>
+    <rect x="130" y="62" width="68" height="54" rx="20" fill="url(#wear-lens)"/>
+    <path d="M109 73c6-5 16-5 22 0" fill="none" stroke="#B9B3CF" stroke-linecap="round" stroke-width="7"/>
+    <path d="M50 70c14-7 31-8 48-2M142 68c17-6 33-5 48 2" fill="none" stroke="#93C5FD" stroke-linecap="round" stroke-width="2" opacity=".45"/>
+  </g>
+  <g filter="url(#wear-glow)" opacity=".5">
+    <path d="M65 91c9-13 18 13 27 0s18 13 27 0 18 13 27 0 18 13 27 0" fill="none" stroke="#8B5CF6" stroke-width="9"/>
+  </g>
+  <path d="M65 91c9-13 18 13 27 0s18 13 27 0 18 13 27 0 18 13 27 0" fill="none" stroke="url(#wear-signal)" stroke-linecap="round" stroke-width="3"/>
+  <g transform="translate(174 130)">
+    <rect width="27" height="43" rx="13.5" fill="#77718E"/>
+    <rect x="4" y="4" width="19" height="31" rx="9.5" fill="#161329"/>
+    <path d="M9 15c3-4 6-4 9 0" fill="none" stroke="#A78BFA" stroke-linecap="round" stroke-width="2"/>
+    <circle cx="13.5" cy="22" r="3" fill="#60A5FA"/>
+    <path d="M11 35h5v13a2.5 2.5 0 0 1-5 0V35Z" fill="#C4BFD6"/>
+  </g>
+  <path d="M42 151h92" stroke="#8B5CF6" stroke-dasharray="3 8" stroke-linecap="round" opacity=".35"/>
+  <circle cx="42" cy="151" r="4" fill="#38BDF8"/>
+  <circle cx="134" cy="151" r="4" fill="#A78BFA"/>
+</svg>
