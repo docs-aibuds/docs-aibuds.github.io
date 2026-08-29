@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_=self.webpackChunk_||[]).push([["7983"],{74632(s){s.exports=JSON.parse('{"name":"aibuds-skills","id":"default"}')}}]);
